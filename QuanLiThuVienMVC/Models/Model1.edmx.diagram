@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c2126aea06c746589defaa2ff5a81d39" Name="Diagram1" ZoomLevel="98">
+        <EntityTypeShape EntityType="thuvienModel.DanhGiaSach" Width="1.5" PointX="6" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="thuvienModel.DanhSachSachCaNhan" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="thuvienModel.DatTruoc" Width="1.5" PointX="6" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="thuvienModel.LichSuTimKiem" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="thuvienModel.LichTrucThuThu" Width="1.5" PointX="3" PointY="19.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="thuvienModel.MuonSach" Width="1.5" PointX="3" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="thuvienModel.NguoiDung" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="thuvienModel.Sach" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="thuvienModel.SachTrongDanhSach" Width="1.5" PointX="5.25" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="thuvienModel.ThanhToanTienPhat" Width="1.5" PointX="3" PointY="25.5" IsExpanded="true" />
+        <AssociationConnector Association="thuvienModel.FK__DanhGiaSa__MaNgu__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="thuvienModel.FK__DanhGiaSa__MaSac__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="thuvienModel.FK__DanhSachS__MaNgu__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="thuvienModel.FK__SachTrong__MaDan__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="thuvienModel.FK__DatTruoc__MaNguo__4222D4EF" ManuallyRouted="false" />
+        <AssociationConnector Association="thuvienModel.FK__DatTruoc__MaSach__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="thuvienModel.FK__LichSuTim__MaNgu__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="thuvienModel.FK__LichTrucT__MaNgu__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="thuvienModel.FK__MuonSach__MaNguo__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="thuvienModel.FK__MuonSach__MaSach__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="thuvienModel.FK__ThanhToan__MaNgu__49C3F6B7" ManuallyRouted="false" />
+        <AssociationConnector Association="thuvienModel.FK__SachTrong__MaSac__5629CD9C" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="thuvienModelStoreContainer" CdmEntityContainer="thuvienEntities">
+    <EntitySetMapping Name="DanhGiaSach">
+      <EntityTypeMapping TypeName="thuvienModel.DanhGiaSach">
+        <MappingFragment StoreEntitySet="DanhGiaSach">
+          <ScalarProperty Name="MaDanhGia" ColumnName="MaDanhGia" />
+          <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+          <ScalarProperty Name="MaNguoiDung" ColumnName="MaNguoiDung" />
+          <ScalarProperty Name="DiemDanhGia" ColumnName="DiemDanhGia" />
+          <ScalarProperty Name="NhanXet" ColumnName="NhanXet" />
+          <ScalarProperty Name="NgayDanhGia" ColumnName="NgayDanhGia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DanhSachSachCaNhan">
+      <EntityTypeMapping TypeName="thuvienModel.DanhSachSachCaNhan">
+        <MappingFragment StoreEntitySet="DanhSachSachCaNhan">
+          <ScalarProperty Name="MaDanhSach" ColumnName="MaDanhSach" />
+          <ScalarProperty Name="MaNguoiDung" ColumnName="MaNguoiDung" />
+          <ScalarProperty Name="TenDanhSach" ColumnName="TenDanhSach" />
+          <ScalarProperty Name="NgayTao" ColumnName="NgayTao" />
+          <ScalarProperty Name="NgayCapNhat" ColumnName="NgayCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DatTruoc">
+      <EntityTypeMapping TypeName="thuvienModel.DatTruoc">
+        <MappingFragment StoreEntitySet="DatTruoc">
+          <ScalarProperty Name="MaDatTruoc" ColumnName="MaDatTruoc" />
+          <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+          <ScalarProperty Name="MaNguoiDung" ColumnName="MaNguoiDung" />
+          <ScalarProperty Name="NgayDat" ColumnName="NgayDat" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LichSuTimKiem">
+      <EntityTypeMapping TypeName="thuvienModel.LichSuTimKiem">
+        <MappingFragment StoreEntitySet="LichSuTimKiem">
+          <ScalarProperty Name="MaTimKiem" ColumnName="MaTimKiem" />
+          <ScalarProperty Name="MaNguoiDung" ColumnName="MaNguoiDung" />
+          <ScalarProperty Name="TuKhoaTimKiem" ColumnName="TuKhoaTimKiem" />
+          <ScalarProperty Name="NgayTimKiem" ColumnName="NgayTimKiem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LichTrucThuThu">
+      <EntityTypeMapping TypeName="thuvienModel.LichTrucThuThu">
+        <MappingFragment StoreEntitySet="LichTrucThuThu">
+          <ScalarProperty Name="MaLichTruc" ColumnName="MaLichTruc" />
+          <ScalarProperty Name="MaNguoiDung" ColumnName="MaNguoiDung" />
+          <ScalarProperty Name="NgayTruc" ColumnName="NgayTruc" />
+          <ScalarProperty Name="GioBatDau" ColumnName="GioBatDau" />
+          <ScalarProperty Name="GioKetThuc" ColumnName="GioKetThuc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MuonSach">
+      <EntityTypeMapping TypeName="thuvienModel.MuonSach">
+        <MappingFragment StoreEntitySet="MuonSach">
+          <ScalarProperty Name="MaMuon" ColumnName="MaMuon" />
+          <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+          <ScalarProperty Name="MaNguoiDung" ColumnName="MaNguoiDung" />
+          <ScalarProperty Name="NgayMuon" ColumnName="NgayMuon" />
+          <ScalarProperty Name="NgayDenHan" ColumnName="NgayDenHan" />
+          <ScalarProperty Name="NgayTra" ColumnName="NgayTra" />
+          <ScalarProperty Name="TrangThai" ColumnName="TrangThai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NguoiDung">
+      <EntityTypeMapping TypeName="thuvienModel.NguoiDung">
+        <MappingFragment StoreEntitySet="NguoiDung">
+          <ScalarProperty Name="MaNguoiDung" ColumnName="MaNguoiDung" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+          <ScalarProperty Name="Ho" ColumnName="Ho" />
+          <ScalarProperty Name="Ten" ColumnName="Ten" />
+          <ScalarProperty Name="SoDienThoai" ColumnName="SoDienThoai" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sach">
+      <EntityTypeMapping TypeName="thuvienModel.Sach">
+        <MappingFragment StoreEntitySet="Sach">
+          <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+          <ScalarProperty Name="TieuDe" ColumnName="TieuDe" />
+          <ScalarProperty Name="TheLoai" ColumnName="TheLoai" />
+          <ScalarProperty Name="TacGia" ColumnName="TacGia" />
+          <ScalarProperty Name="ISBN" ColumnName="ISBN" />
+          <ScalarProperty Name="NamXuatBan" ColumnName="NamXuatBan" />
+          <ScalarProperty Name="NhaXuatBan" ColumnName="NhaXuatBan" />
+          <ScalarProperty Name="TongSoBan" ColumnName="TongSoBan" />
+          <ScalarProperty Name="SoBanKhaDung" ColumnName="SoBanKhaDung" />
+          <ScalarProperty Name="ViTri" ColumnName="ViTri" />
+          <ScalarProperty Name="Imagesach" ColumnName="Imagesach" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SachTrongDanhSach">
+      <EntityTypeMapping TypeName="thuvienModel.SachTrongDanhSach">
+        <MappingFragment StoreEntitySet="SachTrongDanhSach">
+          <ScalarProperty Name="MaSachTrongDanhSach" ColumnName="MaSachTrongDanhSach" />
+          <ScalarProperty Name="MaDanhSach" ColumnName="MaDanhSach" />
+          <ScalarProperty Name="MaSach" ColumnName="MaSach" />
+          <ScalarProperty Name="NgayThem" ColumnName="NgayThem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ThanhToanTienPhat">
+      <EntityTypeMapping TypeName="thuvienModel.ThanhToanTienPhat">
+        <MappingFragment StoreEntitySet="ThanhToanTienPhat">
+          <ScalarProperty Name="MaThanhToan" ColumnName="MaThanhToan" />
+          <ScalarProperty Name="MaNguoiDung" ColumnName="MaNguoiDung" />
+          <ScalarProperty Name="SoTien" ColumnName="SoTien" />
+          <ScalarProperty Name="NgayThanhToan" ColumnName="NgayThanhToan" />
+          <ScalarProperty Name="PhuongThucThanhToan" ColumnName="PhuongThucThanhToan" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,24 @@
+﻿@{
+    Layout = null;
+    @Styles.Render("~/Content/login.css")
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body style="background: url('/Content/images/Background-phong-canh.jpg'); border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); ">
+
+    <div class="signup-form">
+
+        <div class="signup-form-container" style="background:url('/Content/images/mau-background-moi-truong-don-gian-ma-dep_012016865.jpg');">
+            <div class="signup-form-container-child">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>

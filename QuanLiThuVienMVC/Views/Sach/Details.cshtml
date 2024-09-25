@@ -1,0 +1,112 @@
+﻿@model QuanLiThuVienMVC.Models.Sach
+@{
+    ViewBag.Title = "Book Details";
+}
+
+<style>
+    .book-details {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        border-radius: 8px;
+    }
+
+    .book-title {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #eee;
+        padding-bottom: 10px;
+    }
+
+    .book-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .book-text {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .book-image {
+        flex: 1;
+        min-width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        padding: 20px;
+    }
+
+        .book-image img {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+
+    .info-item {
+        margin-bottom: 10px;
+    }
+
+    .info-label {
+        font-weight: bold;
+        color: #666;
+    }
+
+    .action-links {
+        margin-top: 20px;
+        text-align: right;
+    }
+
+        .action-links a {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-left: 10px;
+        }
+
+            .action-links a:hover {
+                background-color: #0056b3;
+            }
+</style>
+
+<div class="book-details">
+    <h2 class="book-title">@Model.TieuDe</h2>
+    <div class="book-info">
+        <div class="book-text">
+            <div class="info-item">
+                <span class="info-label">@Html.DisplayNameFor(model => model.TheLoai):</span>
+                @Html.DisplayFor(model => model.TheLoai)
+            </div>
+            <div class="info-item">
+                <span class="info-label">@Html.DisplayNameFor(model => model.TacGia):</span>
+                @Html.DisplayFor(model => model.TacGia)
+            </div>
+            <div class="info-item">
+                <span class="info-label">@Html.DisplayNameFor(model => model.ISBN):</span>
+                @Html.DisplayFor(model => model.ISBN)
+            </div>
+            <div class="info-item">
+                <span class="info-label">@Html.DisplayNameFor(model => model.NamXuatBan):</span>
+                @Html.DisplayFor(model => model.NamXuatBan)
+            </div>
+            <div class="info-item">
+                <span class="info-label">@Html.DisplayNameFor(model => model.NhaXuatBan):</span>
+                @Html.DisplayFor(model => model.NhaXuatBan)
+            </div>
+        </div>
+        <div class="book-image">
+            <img src="@Url.Content(Model.Imagesach)" alt="@Model.TieuDe" />
+        </div>
+    </div>
+    <div class="action-links">
+        @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+</div>
